@@ -1,10 +1,11 @@
-import React from "react";
-import {specials} from '../../data'
+import React, {useState} from "react";
+import {specials} from '../../../data'
+import SpecialButton from "./SpecialButton";
 //import any components needed
 
 //Import your array data to from the provided data file
 
-const Specials = () => {
+const Specials = (props) => {
   // STEP 2 - add the imported data to state
   const [button, setButton] = useState(specials);
 
@@ -19,3 +20,5 @@ const Specials = () => {
     </div>
   );
 };
+
+export default Specials
